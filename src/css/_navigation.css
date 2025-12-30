@@ -1,0 +1,287 @@
+/* Navigation - Mobile First */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Hamburger Button */
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: var(--z-nav);
+}
+
+.hamburger-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-ink);
+  border-radius: 1px;
+  transition:
+    transform var(--transition-base),
+    opacity var(--transition-base),
+    background-color var(--transition-fast);
+}
+
+/* Hamburger Animation */
+.nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+.nav-toggle:focus {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 4px;
+}
+
+.nav-toggle:hover .hamburger-line {
+  background-color: var(--color-burgundy);
+}
+
+/* Navigation Menu - Mobile */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: var(--color-paper);
+  padding: var(--space-8) var(--space-6) var(--space-6);
+  margin: 0;
+  list-style: none;
+  box-shadow: var(--shadow-lg);
+  z-index: calc(var(--z-nav) - 1);
+  transform: translateX(100%);
+  transition: transform var(--transition-slow);
+}
+
+.nav-menu.is-open {
+  transform: translateX(0);
+}
+
+/* Navigation Items */
+.nav-item {
+  margin-bottom: var(--space-1);
+  opacity: 0;
+  transform: translateX(20px);
+  transition:
+    opacity var(--transition-base),
+    transform var(--transition-base);
+}
+
+.nav-menu.is-open .nav-item {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Staggered animation */
+.nav-menu.is-open .nav-item:nth-child(1) { transition-delay: 100ms; }
+.nav-menu.is-open .nav-item:nth-child(2) { transition-delay: 150ms; }
+.nav-menu.is-open .nav-item:nth-child(3) { transition-delay: 200ms; }
+.nav-menu.is-open .nav-item:nth-child(4) { transition-delay: 250ms; }
+.nav-menu.is-open .nav-item:nth-child(5) { transition-delay: 300ms; }
+
+/* Navigation Links */
+.nav-link {
+  display: block;
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-ink);
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.nav-link:hover {
+  color: var(--color-burgundy);
+  background-color: var(--color-paper-warm);
+  border-left-color: var(--color-sepia);
+}
+
+.nav-link:focus {
+  outline: none;
+  background-color: var(--color-paper-warm);
+  border-left-color: var(--color-gold);
+}
+
+.nav-link.is-active {
+  color: var(--color-burgundy);
+  border-left-color: var(--color-burgundy);
+  font-weight: 600;
+}
+
+/* Overlay */
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(44, 36, 22, 0.5);
+  z-index: calc(var(--z-nav) - 2);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity var(--transition-base),
+    visibility var(--transition-base);
+}
+
+.nav-overlay.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Dropdown - Mobile */
+.has-dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.dropdown-arrow {
+  transition: transform var(--transition-base);
+}
+
+.dropdown-toggle[aria-expanded="true"] .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-base);
+}
+
+.dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
+  max-height: 200px;
+}
+
+.dropdown-link {
+  padding-left: var(--space-6);
+  font-size: var(--text-base);
+}
+
+/* Desktop Navigation */
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-menu {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    transform: none;
+    display: flex;
+    gap: var(--space-2);
+  }
+
+  .nav-item {
+    margin-bottom: 0;
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .nav-link {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-base);
+    border-left: none;
+    border-bottom: 2px solid transparent;
+  }
+
+  .nav-link:hover {
+    background-color: transparent;
+    border-left: none;
+    border-bottom-color: var(--color-sepia);
+  }
+
+  .nav-link:focus {
+    background-color: transparent;
+    border-left: none;
+    border-bottom-color: var(--color-gold);
+  }
+
+  .nav-link.is-active {
+    border-left: none;
+    border-bottom-color: var(--color-burgundy);
+  }
+
+  .nav-overlay {
+    display: none;
+  }
+
+  /* Dropdown - Desktop */
+  .dropdown-toggle {
+    width: auto;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: var(--color-paper);
+    border: var(--border-subtle);
+    box-shadow: var(--shadow-lg);
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity var(--transition-base),
+      visibility var(--transition-base);
+  }
+
+  .has-dropdown:hover .dropdown-menu,
+  .has-dropdown:focus-within .dropdown-menu,
+  .dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
+    max-height: none;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dropdown-link {
+    padding: var(--space-3) var(--space-4);
+    padding-left: var(--space-4);
+    border-bottom: none;
+    border-left: 3px solid transparent;
+  }
+
+  .dropdown-link:hover {
+    border-left-color: var(--color-sepia);
+    border-bottom: none;
+  }
+}

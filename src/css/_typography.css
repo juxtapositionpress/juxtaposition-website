@@ -1,0 +1,106 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-ink);
+  background-color: var(--color-paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: var(--leading-tight);
+  color: var(--color-ink);
+  margin-top: var(--space-7);
+  margin-bottom: var(--space-4);
+}
+
+h1 {
+  font-size: var(--text-4xl);
+  margin-top: 0;
+}
+
+h2 {
+  font-size: var(--text-3xl);
+}
+
+h3 {
+  font-size: var(--text-2xl);
+}
+
+h4 {
+  font-size: var(--text-xl);
+}
+
+/* Body text */
+p {
+  margin-bottom: var(--space-5);
+  max-width: 65ch;
+}
+
+/* Links */
+a {
+  color: var(--color-sepia);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-burgundy);
+}
+
+a:focus {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+/* Lists */
+ul, ol {
+  margin-bottom: var(--space-5);
+  padding-left: var(--space-5);
+}
+
+li {
+  margin-bottom: var(--space-2);
+}
+
+li::marker {
+  color: var(--color-sepia);
+}
+
+/* Blockquotes */
+blockquote {
+  font-style: italic;
+  font-size: var(--text-lg);
+  border-left: 3px solid var(--color-sepia);
+  margin: var(--space-6) 0;
+  padding: var(--space-4) var(--space-5);
+  background-color: var(--color-paper-warm);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Horizontal rules */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-sepia), transparent);
+  margin: var(--space-7) auto;
+  max-width: 200px;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-ink);
+}

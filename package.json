@@ -1,0 +1,12 @@
+{
+  "name": "juxtaposition-website",
+  "version": "1.0.0",
+  "description": "Juxtaposition's literary website",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "items": [
+    { "title": "Home", "url": "/" },
+    {
+      "title": "Contributors",
+      "children": [
+        { "title": "Violet", "url": "/violet/" },
+        { "title": "Kieran", "url": "/kieran/" }
+      ]
+    },
+    { "title": "Zine", "url": "/zine/" }
+  ]
+}

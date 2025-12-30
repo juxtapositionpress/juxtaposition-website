@@ -1,7 +1,9 @@
-# Welcome to Juxtaposition's Website
+---
+layout: base.njk
+title: Welcome - Juxtaposition
+description: Welcome to Juxtaposition's website
+---
 
-This is the homepage. You can navigate to other pages:
-- [Blabaloo](./BLABALOO.md)
-- [Violet](./VIOLET.md)
-- [Kieran](./KIERAN.md)
-- [Home](./HOME.md)
+# Welcome to Juxtaposition
+
+This is the homepage. Use the navigation menu to explore our pages.
