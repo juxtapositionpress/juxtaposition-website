@@ -74,6 +74,22 @@ img {
   text-align: center;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-5);
+  margin-bottom: var(--space-4);
+}
+
+.social-links a {
+  color: var(--color-sepia);
+  transition: color var(--transition-fast);
+}
+
+.social-links a:hover {
+  color: var(--color-burgundy);
+}
+
 .copyright {
   font-size: var(--text-sm);
   color: var(--color-ink-light);

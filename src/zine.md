@@ -6,4 +6,4 @@ description: Our zine
 
 # Zine
 
-This page coming soon.
+Our zine is on hiatus! Check back to learn more.

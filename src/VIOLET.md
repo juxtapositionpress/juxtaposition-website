@@ -6,4 +6,4 @@ description: Learn about Violet
 
 # Violet
 
-This page coming soon.
+Violet is a writer who lives in T'karonto, stolen land.
