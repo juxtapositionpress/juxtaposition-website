@@ -3,7 +3,7 @@
   text-align: center;
   padding-bottom: var(--space-6);
   margin-bottom: var(--space-6);
-  border-bottom: 1px solid var(--color-sepia);
+  border-bottom: 1px solid var(--ui-color);
 }
 
 .page-header h1 {
@@ -12,13 +12,13 @@
 
 .page-header .subtitle {
   font-style: italic;
-  color: var(--color-ink-light);
+  color: var(--text-color-light);
   font-size: var(--text-lg);
 }
 
 /* Card */
 .card {
-  background-color: var(--color-paper-warm);
+  background-color: var(--bkg-color-2);
   border: var(--border-subtle);
   padding: var(--space-5);
   margin-bottom: var(--space-5);
@@ -38,9 +38,9 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   text-decoration: none;
-  border: 2px solid var(--color-ink);
+  border: 2px solid var(--text-color);
   background-color: transparent;
-  color: var(--color-ink);
+  color: var(--text-color);
   cursor: pointer;
   transition:
     background-color var(--transition-fast),
@@ -48,6 +48,6 @@
 }
 
 .btn:hover {
-  background-color: var(--color-ink);
-  color: var(--color-paper);
+  background-color: var(--text-color);
+  color: var(--bkg-color);
 }
