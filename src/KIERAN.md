@@ -1,9 +1,0 @@
----
-layout: base.njk
-title: Kieran - Juxtaposition
-description: Learn about Kieran
----
-
-# Kieran
-
-This page coming soon.
