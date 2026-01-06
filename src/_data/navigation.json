@@ -1,13 +1,7 @@
 {
   "items": [
-    { "title": "Home", "url": "/" },
-    {
-      "title": "Contributors",
-      "children": [
-        { "title": "Violet", "url": "/violet/" },
-        { "title": "Kieran", "url": "/kieran/" }
-      ]
-    },
+    { "title": "About", "url": "/about" },
+    { "title": "Writing Circles", "url": "/writing-circles" },
     { "title": "Zine", "url": "/zine/" }
   ]
 }

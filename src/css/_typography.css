@@ -3,39 +3,41 @@ html {
 }
 
 body {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: var(--text-base);
   line-height: var(--leading-relaxed);
-  color: var(--color-ink);
-  background-color: var(--color-paper);
+  color: var(--text-color);
+  background-color: var(--bkg-color);
   -webkit-font-smoothing: antialiased;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-weight: 600;
   line-height: var(--leading-tight);
-  color: var(--color-ink);
+  color: var(--text-color);
   margin-top: var(--space-7);
   margin-bottom: var(--space-4);
 }
 
 h1 {
+  font-family: var(--font-display);
   font-size: var(--text-4xl);
   margin-top: 0;
+  color: var(--text-color);
 }
 
 h2 {
-  font-size: var(--text-3xl);
+  font-size: var(--text-xl);
 }
-
+home-link
 h3 {
-  font-size: var(--text-2xl);
+  font-size: var(--text-lg);
 }
 
 h4 {
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
 }
 
 /* Body text */
@@ -46,21 +48,21 @@ p {
 
 /* Links */
 a {
-  color: var(--color-sepia);
   text-decoration: underline;
   text-underline-offset: 3px;
-  transition: color var(--transition-fast);
 }
 
-a:hover,
-a:focus {
-  color: var(--color-burgundy);
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
 }
 
-a:focus {
-  outline: 2px solid var(--color-gold);
-  outline-offset: 2px;
-}
 
 /* Lists */
 ul, ol {
@@ -80,7 +82,7 @@ li::marker {
 blockquote {
   font-style: italic;
   font-size: var(--text-lg);
-  border-left: 3px solid var(--color-sepia);
+  border-left: 3px solid var(--text-color);
   margin: var(--space-6) 0;
   padding: var(--space-4) var(--space-5);
   background-color: var(--color-paper-warm);
@@ -101,6 +103,44 @@ hr {
 
 /* Selection */
 ::selection {
-  background-color: var(--color-gold);
-  color: var(--color-ink);
+  background-color: var(--color-purple);
+  color: var(--bkg-color);
+}
+
+
+/* Fonts */
+@font-face {
+    font-family: "STAR";
+    src: url("/assets/fonts/STAR.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Hyperlegible";
+    src: url("/assets/fonts/hyperleg-reg.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Hyperlegible";
+    src: url("/assets/fonts/hyperleg-italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Hyperlegible";
+    src: url("/assets/fonts/hyperleg-bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Hyperlegible";
+    src: url("/assets/fonts/hyperleg-bolditalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
 }
