@@ -9,5 +9,6 @@ description: Welcome to Juxtaposition's website
 Welcome. We are an arts collective by and for the trans community in Toronto,
 ON.
 
-We run a monthly writing circle, second Thursday of each month. Check out our
-[eventbrite](https://writingcircle.eventbrite.ca/) to learn how to attend.
+We run a monthly [writing circle,](/writing-circles/) second Thursday of each month.
+
+We also have a Discord server! [Join us](https://discord.gg/NKeCFrTck7)

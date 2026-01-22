@@ -6,7 +6,7 @@ description: Learn about Violet
 
 # Violet
 
-Violet is a writer who lives in T'karonto, stolen land.
+Violet is a writer who lives in T'karonto, stolen land. Follow her @literaryarsonist.press on bluesky.
 
 ## Publications
 
