@@ -10,7 +10,7 @@ The Juxtaposition zine publishes poetry of all kinds by members of the Juxtaposi
 
 We aim to create a space where trans, non-binary, and Two Spirit writers can share and enjoy each other’s work, including (but not limited to!) poetry written in our in-person writing circles and workshops.
 
-Anyone who attends a Juxtaposition event or joins our [online community](https://discord.gg/NKeCFrTck7) is welcome to submit their work. Submission requirements and deadlines for the next issue to be announced soon. [I imagine we’ll have this info confirmed by the next meeting actually.]
+Anyone who attends a Juxtaposition event or joins our [online community](https://discord.gg/NKeCFrTck7) is welcome to submit their work. Deadlines for the next issue to be announced soon.
 
 ## What to Submit
 
