@@ -6,7 +6,7 @@ description: Our zine
 
 # Zine
 
-The Juxtaposition zine publishes poetry of all kinds by members of the Juxtaposition collective.
+The Juxtaposition zine publishes writing by members of the Juxtaposition collective.
 
 We aim to create a space where trans, non-binary, and Two Spirit writers can share and enjoy each other’s work, including (but not limited to!) poetry written in our in-person writing circles and workshops.
 
@@ -19,6 +19,7 @@ We are seeking poems, flash fiction, and critical review essays.
 ### What kinds of poetry?
 
 Any kind! Metre and rhyme, free verse, visual, blackout–we take it all!
+Three poems max.
 
 ### What is flash fiction?
 
@@ -28,10 +29,9 @@ Fiction under 500 words qualifies as flash fiction.
 
 Write about a piece of media from your unique trans perspective!
 
-
 ## How to Submit
 
-Please email `juxtapositionpoetry@gmail.com` with the subject `SUBMISSION - [YOUR NAME]`
+Please email `juxtapositionpoetry@gmail.com` with the subject `ZINE SUBMISSION - [YOUR NAME]`
 
 Include the following info in the body of your email:
 
