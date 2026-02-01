@@ -22,7 +22,7 @@
   display: block;
   width: 100%;
   height: 2px;
-  background-color: var(--color-ink);
+  background-color: var(--text-color);
   border-radius: 1px;
   transition:
     transform var(--transition-base),
@@ -44,12 +44,12 @@
 }
 
 .nav-toggle:focus {
-  outline: 2px solid var(--color-gold);
+  outline: 2px solid var(--text-color-link);
   outline-offset: 4px;
 }
 
 .nav-toggle:hover .hamburger-line {
-  background-color: var(--color-burgundy);
+  background-color: var(--text-color-link);
 }
 
 /* Navigation Menu - Mobile */
@@ -59,7 +59,7 @@
   right: 0;
   width: 280px;
   height: 100vh;
-  background-color: var(--color-paper);
+  background-color: var(--bkg-color);
   padding: var(--space-8) var(--space-6) var(--space-6);
   margin: 0;
   list-style: none;
@@ -99,9 +99,9 @@
 .nav-link {
   display: block;
   padding: var(--space-3) var(--space-4);
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-size: var(--text-lg);
-  color: var(--color-ink);
+  color: var(--text-color);
   text-decoration: none;
   border-left: 3px solid transparent;
   transition:
@@ -110,23 +110,6 @@
     background-color var(--transition-fast);
 }
 
-.nav-link:hover {
-  color: var(--color-burgundy);
-  background-color: var(--color-paper-warm);
-  border-left-color: var(--color-sepia);
-}
-
-.nav-link:focus {
-  outline: none;
-  background-color: var(--color-paper-warm);
-  border-left-color: var(--color-gold);
-}
-
-.nav-link.is-active {
-  color: var(--color-burgundy);
-  border-left-color: var(--color-burgundy);
-  font-weight: 600;
-}
 
 /* Overlay */
 .nav-overlay {
@@ -177,17 +160,13 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows var(--transition-base);
-}
-
-.dropdown-menu > li {
+  max-height: 0;
   overflow: hidden;
+  transition: max-height var(--transition-base);
 }
 
 .dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
-  grid-template-rows: 1fr;
+  max-height: 200px;
 }
 
 .dropdown-link {
@@ -258,7 +237,7 @@
     top: 100%;
     left: 0;
     min-width: 160px;
-    background-color: var(--color-paper);
+    background-color: var(--bkg-color);
     border: var(--border-subtle);
     box-shadow: var(--shadow-lg);
     max-height: 0;

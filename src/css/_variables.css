@@ -1,23 +1,29 @@
 :root {
-  /* Color Palette - Literary/Classic */
-  --color-paper: #faf8f5;
-  --color-paper-warm: #f5f0e8;
-  --color-ink: #2c2416;
-  --color-ink-light: #4a4235;
+  /* Colors: Flexoki <https://stephango.com/flexoki> */
+--bkg-color: rgb(255, 252, 240);
+--bkg-color-2: rgb(242, 240, 229);
 
-  --color-sepia: #704214;
-  --color-burgundy: #722f37;
-  --color-gold: #b8860b;
+--text-color: rgb(16, 15, 15);
+--text-color-2: rgb(111, 110, 105);
 
-  --color-gray-100: #f7f5f2;
-  --color-gray-200: #e8e4de;
-  --color-gray-300: #d4cfc6;
-  --color-gray-400: #a39e94;
-  --color-gray-500: #7a756c;
+--ui-color: rgb(230, 228, 217);
+
+--text-color-link: var(--color-blue);
+--text-color-link-active: var(--color-cyan);
+--text-color-link-visited: var(--color-purple);
+
+--color-red: rgb(175, 48, 41);
+--color-orange: rgb(188, 82, 21);
+--color-yellow: rgb(173, 131, 1);
+--color-green: rgb(102, 128, 11);
+--color-cyan: rgb(36, 131, 123);
+--color-blue: rgb(32, 94, 166);
+--color-purple: rgb(94, 64, 157);
+--color-magenta: rgb(160, 47, 111);
 
   /* Typography */
-  --font-serif: 'Libre Baskerville', Georgia, serif;
-  --font-display: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Hyperlegible', system-ui, sans-serif;
+  --font-display: 'STAR', sans-serif;
 
   --text-sm: 0.875rem;
   --text-base: 1rem;
@@ -42,7 +48,7 @@
   --space-8: 4rem;
 
   /* Layout */
-  --max-width-content: 800px;
+  --max-width: 800px;
   --max-width-wide: 1200px;
 
   /* Transitions */
@@ -59,4 +65,25 @@
   --z-nav: 100;
   --z-overlay: 90;
   --z-header: 80;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+	        --color-red: rgb(209, 77, 65);
+        	--color-orange: rgb(218, 112, 44);
+        	--color-yellow: rgb(208, 162, 21);
+         	--color-green: rgb(135, 154, 57);
+	        --color-cyan: rgb(58, 169, 159);
+	        --color-blue: rgb(67, 133, 190);
+	        --color-purple: rgb(139, 126, 200);
+	        --color-magenta: rgb(206, 93, 151);
+
+		--text-color: rgb(206, 205, 195);
+		--text-color-2: rgb(135, 133, 128);
+
+		--ui-color: rgb(52, 51, 49);
+
+		--bkg-color: rgb(28, 27, 26);
+		--bkg-color-2: rgb(40, 39, 38);
+	}
 }
