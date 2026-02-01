@@ -177,13 +177,17 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  max-height: 0;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--transition-base);
+}
+
+.dropdown-menu > li {
   overflow: hidden;
-  transition: max-height var(--transition-base);
 }
 
 .dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
-  max-height: 200px;
+  grid-template-rows: 1fr;
 }
 
 .dropdown-link {
